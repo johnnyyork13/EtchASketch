@@ -18,11 +18,13 @@ body {
 }
 
 #drawingArea {
-    grid-template-columns: auto auto;
-    justify-content: baseline;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     margin: 75px;
-    margin-right: 30px;
-    width: 700px;
+    margin-right: 20px;
+    width: 650px;
     height: 600px;
     background-color: white;
     box-shadow: 0 0 1em black;
@@ -30,22 +32,64 @@ body {
 }
 
 #controls {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     margin: 75px;
-    margin-left: 30px;
-    width: 250px;
+    margin-left: 20px;
+    width: 150px;
     height: 600px;
     background-color: white;
     box-shadow: 0 0 1em black;
 
 }
 
-.testBox {
-    flex-shrink: 0;
-    width: 50px;
-    height: 50px;
-    background-color: black;
+button {
+    margin: 10px;
+    background-color: orange;
+    border-radius: 5px;
+    width: 80px;
+    height: 30px;
 }
 
+h4 {
+    margin: 15px;
+}
 
+#redDiv, #greenDiv, #blueDiv {
+    width: 50px;
+    height: 30px;
+    margin: 5px;
+    border: 2px solid black;
+    border-radius: 2px;
+}
+
+#redDiv {
+    background-color: red;
+}
+
+#greenDiv {
+    background-color: green;
+}
+
+#blueDiv {
+    background-color: blue;
+}
+
+.radioWrapper {
+    width: 150px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.radioClass {
+    display: flex;
+    width: 150px;
+    justify-content: center;
+    margin: 10px;
+}
 
 
